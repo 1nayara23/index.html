@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Guía de Programación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="tabs">
+        <div class="tab-header">
+            <button onclick="openTab(event, 'Lenguajes')" class="tab-links active">Lenguajes</button>
+            <button onclick="openTab(event, 'GitHub')" class="tab-links">GitHub Paso a Paso</button>
+        </div>
+
+        <div id="Lenguajes" class="tab-content" style="display:block;">
+            <h2>Lenguajes de Programación Populares</h2>
+            <ul>
+                <li><strong>Python:</strong> Ideal para inteligencia artificial y ciencia de datos.</li>
+                <li><strong>JavaScript:</strong> El lenguaje de la web (interactividad).</li>
+                <li><strong>Java:</strong> Muy usado en aplicaciones empresariales y Android.</li>
+            </ul>
+        </div>
+
+        <div id="GitHub" class="tab-content">
+            <h2>Cómo subir tu proyecto a GitHub</h2>
+            <ol>
+                <li><strong>Crear cuenta:</strong> Regístrate en <a href="https://github.com">github.com</a>.</li>
+                <li><strong>Nuevo Repositorio:</strong> Haz clic en el botón "+" y selecciona "New repository".</li>
+                <li><strong>Subir archivos:</strong> Puedes arrastrar tus carpetas directamente al navegador en la opción "uploading an existing file".</li>
+                <li><strong>Commit:</strong> Escribe un mensaje describiendo tus cambios y dale a "Commit changes".</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

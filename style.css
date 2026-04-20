@@ -1,0 +1,21 @@
+body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+
+.tabs { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+
+.tab-header { border-bottom: 2px solid #ddd; margin-bottom: 20px; }
+
+.tab-links {
+    border: none; outline: none; padding: 10px 20px; cursor: pointer;
+    background: none; font-size: 16px; transition: 0.3s;
+}
+
+.tab-links:hover { background-color: #eee; }
+
+.tab-links.active { border-bottom: 2px solid #007bff; color: #007bff; font-weight: bold; }
+
+.tab-content { display: none; animation: fadeEffect 0.5s; }
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
