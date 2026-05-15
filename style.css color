@@ -1,0 +1,139 @@
+/* Configuración General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.tabs {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Cabecera de pestañas */
+.tab-header {
+    display: flex;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.tab-links {
+    padding: 12px 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+    transition: 0.3s;
+    border-radius: 8px 8px 0 0;
+}
+
+.tab-links:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+
+.tab-links.active {
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+}
+
+/* Contenido de las pestañas */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilo de los Títulos */
+h2 {
+    color: #2c3e50;
+    border-left: 5px solid #007bff;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #27ae60;
+}
+
+/* Listas de Lenguajes */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f8f9fa;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #dee2e6;
+}
+
+/* Los enlaces de niveles */
+ul li ul {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+ul li ul li {
+    background: white;
+    border: 1px solid #007bff;
+    padding: 5px 12px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+ul li ul li a {
+    text-decoration: none;
+    color: #007bff !important;
+    font-weight: bold;
+}
+
+ul li ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Bloques de código (El riego de habas) */
+code {
+    background: #2d3436;
+    color: #fab1a0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Sección de GitHub */
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 40px 0;
+}
